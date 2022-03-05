@@ -1,0 +1,162 @@
+/* COLOR REFERENCE
+#7DAF9C - light green
+#35524A - dark green
+#8D818C - light purple
+#320E3B - dark purple
+#F1F1F1 - light grey
+*/
+
+/* WIREFRAME: https://wireframe.cc/EVuUyQ */
+
+
+.viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-wrapper {
+    background-color: #320E3B;
+    color: white;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    display: flex;
+}
+
+.left-column {
+    display: flex;
+    align-items: center;
+}
+
+.header-styles {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+.center-column {
+    /* width: 800px; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.right-column {
+    display: flex;
+    align-items: center;
+}
+
+.header-btn {
+    height: 24px;
+    width: fit-content;
+    background-color: #79af9c;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #320E3B;
+    cursor: pointer;
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    clear: both;
+}
+
+.nav-link {
+    width: 70px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* this doesn't work??? */
+.nav-link:visited {
+    text-decoration: underline;
+    color: #8D818C;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.main-btn {
+
+}
+
+
+.main-bullet-list {
+
+}
+
+.project-photos {
+
+}
+
+.meet {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
