@@ -3,10 +3,16 @@
 <head>
     <title>Healthier Homelife</title>
     <link rel="stylesheet" href="pages/styles2.css">
-    <link rel="icon" href="pages/assets/HH Icon.png" type="image/flower-icon">
+    <link rel="icon" href="pages/assets/Icon2.png" type="image/flower-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09ba30c029.js" crossorigin="anonymous"></script>
 
+</head>
 
 <body>
     <!-- HEADER -->
@@ -14,30 +20,29 @@
         <!-- LEFT COLUMN -->
         <div class="left-column">
             <div class="header-styles">
-                <div>Call Us!</div>
-                <div>801-520-2499</div>
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="pages/assets/Logo2.png" alt="Healthier Homelife Logo">
+                </div>
             </div>
         </div>
 
         <!-- CENTER COLUMN -->
-        <div class="center-column">
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="pages/assets/HH Logo.png" alt="Healthier Homelife Logo">
-            </div>
-            <!-- NAVIGATION -->
-            <nav class="link-wrapper">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="pages/Services.html">Services</a>
-                <a class="nav-link" href="pages/Testimonials.html">Testimonials</a>
-                <a class="nav-link" href="pages/Contact.html">Contact</a>
-            </nav>
+        <!-- <div class="center-column">
+        </div> -->
+
+        <!-- NAVIGATION -->
+        <nav class="link-wrapper">
+            <u>H o m e</u>
+            <a class="nav-link" href="pages/Services.html">Services</a>
+            <a class="nav-link" href="pages/Testimonials.html">Testimonials</a>
+            <a class="nav-link" href="pages/Contact.html">Contact</a>
+        </nav>
         </div>
 
 
         <!-- RIGHT COLUMN -->
-        <!-- button: how to get it to go to Contact page on click or add href? -->
-        <div class="right-column">
+        <!-- <div class="right-column">
             <div class="header-styles">
                 <div>Don't know where to start?</div>
                 <div>
@@ -46,7 +51,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -56,56 +61,149 @@
         <!-- MAIN PAGE -->
 
         <!-- MAIN IMAGE WITH 'make space for what you love'-->
-        <div>
-            <img src="#" alt="make space for what you love">
+        <div class="container">
+            <img class="clean-bedroom" src="pages/assets/clean bedroom2.jpg" alt="bright bedroom">
+            <div class="centered">make space for what you love</div>
         </div>
-        <!-- LARGE BUTTON TO BOOK CONSULT -->
-        <div>
-            <button class="main-btn" onclick="#">BOOK FREE CONSULTATION</button>
 
+        <!-- LARGE BUTTON TO BOOK CONSULT -->
+        <div class="main-btn">
+            <form action="pages/Contact.html">
+                <button class="main-btn-style" type="submit">BOOK FREE CONSULTATION</button>
+            </form>
         </div>
+
+
         <!-- OUR SERVICES -->
-        <div>
-            <h1>OUR SERVICES</h1>
+        <hr class="line">
+        <div class="services">
+            OUR SERVICES
         </div>
+        <hr class="line">
+
         <!-- BULLET LISTS -->
+        <!-- how to get these lists spaced out a little?? -->
         <div class="main-bullet-list">
-            *two columns of bullet list*
+            <span>
+                <ul class="bullet-column1" style="display: inline-block;">
+                    <li>Non-Toxic Cleaning</li>
+                    <li>Home Organization</li>
+                    <li>Errands & Assitance</li>
+                    <li>House & Pet Sitting</li>
+                </ul>
+
+                <ul class="bullet-column2" style="display: inline-block; padding-left: 20px;">
+                    <li>Home Beautification</li>
+                    <li>Personal Chef & Meal Plans</li>
+                    <li>Personal Training</li>
+                    <li>Health & Wellness</li>
+                </ul>
+                <span>
         </div>
 
         <!-- INSPIRING TEXT LEFT AND PHOTO RIGHT -->
-        <div>
-            <img src="#" alt="inspiring text on left that covers an image on right">
+        <div class="box-one">
+            <img src="pages/assets/clean bed.jpg" alt="clean bed">
+            <div class="quote1">The space in which we live should be for <br>the person we are becoming now, <br>not for
+                the
+                person we were in the past.<br>-Marie Kondo</div>
         </div>
+
 
         <!-- OUR PROJECTS -->
-        <div>
-            <h1>OUR PROJECTS</h1>
+        <hr class="line">
+        <div class="projects">
+            OUR PROJECTS
         </div>
+        <hr class="line">
+
+
         <!-- PROJECT PHOTOS -->
-        <div class="project-photos">
-            *approx six photos of projects*
+        <div class="project-photos1">
+            <img src="pages/assets/girl walking five dogs.jpg">
+            <img src="pages/assets/glass jar spices.jpg">
+            <img src="pages/assets/handwritten planner.jpg">
         </div>
+        <div class="project-photos2">
+            <img src="pages/assets/home office.jpg">
+            <img src="pages/assets/yoga class.jpg">
+            <!-- <img src="pages/assets/meal prep boxes.jpg"> -->
+        </div>
+
+
+
         <!-- MEET THE OWNER -->
+        <hr class="line">
         <div class="meet">
-            <h2>Meet the Owner</h2>
+            Meet the Owner
         </div>
-        <!-- PHOTO LEFT BIO RIGHT -->
-        <div>*portrait on left and biography on right*</div>
+        <hr class="line">
+
+
+        <!-- HEADSHOT AND BIO-->
+        <div class="grid-container">
+            <div class="item1"><img class="headshot" src="pages/assets/headshot.jpg"></div>
+            <div class="item2" p>Hello and welcome! I'm Raphaela. I'm passionate about bringing awareness, clarity,
+                health, and aliveness into the often messy process of daily life. I also love to help make people's
+                lives easier. This is
+                what inspired me to create Healthier Homelife, a full-spectrum home organization and personal coaching
+                company based on the integration of Maslow's hierarchy of needs, applied and functional psychology,
+                and practical help. </p>
+            </div>
+            <div class="item3">Raphaela Pandy, BA, Cultural Studies & Critical Theory</p>
+            </div>
+        </div>
 
         <!-- INSPIRING TEXT LEFT AND PHOTO RIGHT -->
-        <div>
-            <img src="#" alt="inspiring text on left that covers an image on right">
+        <div class="box-two">
+            <div class="quote2">Simplicity is the ultimate form of sophistication.
+                <div class="main-btn">
+                    <form action="pages/Contact.html">
+                        <button class="main-btn-style" type="submit">BOOK FREE CONSULTATION</button>
+                    </form>
+                </div>
+            </div>
+            <img src="pages/assets/today is the perfect day to be happy.jpg" alt="planner">
         </div>
-
 
     </main>
 
-    <!-- FOOTER -->
-    <!-- social media links on left, logo in center, Careers & Contact Us on right
-         -->
-    <footer>
 
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="left-footer">
+                <div> <a href="https://g.page/healthierhomelife?share" target="_blank">
+                        <i class="fa-brands google fa-google fa-fw">
+                        </i></a></div>
+                <div> <a href="https://www.thumbtack.com/az/tucson/house-cleaning/healthier-homelife/service/357161566286921741"
+                        target="_blank">
+                        <i class="fa-solid fa-thumbtack fa-fw">
+                        </i></a></div>
+                <div> <a href="https://www.instagram.com/healthier_homelife/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-fw">
+                        </i></a></div>
+                <div> <a href="https://www.facebook.com/healthierhomelife/?modal=admin_todo_tour" target="_blank">
+                        <i class="fa-brands fa-facebook fa-fw">
+                        </i></a></div>
+                <div> <a href="https://www.pinterest.com/healthierhomelife/_saved/" target="_blank">
+                        <i class="fa-brands fa-pinterest fa-fw">
+                        </i></a></div>
+            </div>
+
+            <div class="center-footer">
+                <img src="pages/assets/Logo2.png">
+            </div>
+
+            <div class="right-footer">
+                Careers|Contact
+            </div>
+
+        </div>
     </footer>
 
 </body>

@@ -1,9 +1,10 @@
-/* COLOR REFERENCE
-#7DAF9C - light green
-#35524A - dark green
-#8D818C - light purple
-#320E3B - dark purple
-#F1F1F1 - light grey
+/* QUESTIONS FOR ADRIENNE
+1- When I make the browser window smaller, the nav bar icons get squished. My laptop is wider than most so I want to avoid that. Javascript?
+2- Grid with headshot and bio are not centered.
+3- Other issues when making screen smaller - image & quote is weird, bio is weird.
+4- Logo in footer isn't centered in the center column.
+
+
 */
 
 /* WIREFRAME: https://wireframe.cc/EVuUyQ */
@@ -18,17 +19,25 @@
 
 body {
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header-wrapper {
-    background-color: #320E3B;
-    color: white;
-    height: 100px;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #642b39;
+    color: #ddd;
+    height: 3vw;
+    width: 95vw;
+    /* align-items: center; */
+    text-align: right;
     justify-content: space-between;
     padding: 10px 30px;
     display: flex;
+    z-index: 2;
+    /* font-size: 1.2em; */
 }
 
 .left-column {
@@ -37,13 +46,13 @@ body {
 }
 
 .header-styles {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    font-size: 1em;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* color: #ddd; */
+    /* font-size: 3em; */
 }
 
 .center-column {
-    /* width: 800px; */
+    width: 80vw;
 }
 
 .logo {
@@ -52,7 +61,7 @@ body {
 }
 
 .logo img {
-    height: 100px;
+    height: 4vw;
 }
 
 .right-column {
@@ -61,28 +70,31 @@ body {
 }
 
 .header-btn {
-    height: 24px;
-    width: fit-content;
-    background-color: #79af9c;
+    /* height: 24px;
+    width: fit-content; */
+    background-color: #dee5e5;
     font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #320E3B;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: #642b39;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .link-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 35vw;
     clear: both;
+    font-size: 1.2em;
 }
 
 .nav-link {
     width: 70px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #f1f1f1;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: #ddd;
+    font-size: 1.2em;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -90,7 +102,7 @@ body {
 /* this doesn't work??? */
 .nav-link:visited {
     text-decoration: underline;
-    color: #8D818C;
+    /* color: #8D818C; */
 }
 
 .nav-link:hover {
@@ -98,21 +110,200 @@ body {
     letter-spacing: 2px;
 }
 
-.main-btn {
-
+main {
+    color: #3f403f;
 }
 
+
+.container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 23vw;
+}
+
+
+
+.clean-bedroom {
+    padding-top: 10px;
+    max-height: auto;
+    max-width: 45vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.centered {
+    font-family: 'Cookie', 'cursive';
+    font-size: 4.5em;
+    margin-top: 5%;
+    color: #3f403f;
+    z-index: 1;
+}
+
+.main-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main-btn-style {
+    background-color: #95B2B8;
+    border: none;
+    color: #3f403f;
+    font-weight: bold;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    max-inline-size: 80vw;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 30px;
+}
+
+.main-btn-style:hover {
+    box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+hr.line{
+    border: 2px solid #3f403f;
+    width: 80vw;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+}
 
 .main-bullet-list {
-
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
 }
 
-.project-photos {
+.bullet-column1 {
+    padding-right: 150px;
+}
 
+
+.box-one {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cookie', 'cursive';
+    font-size: 3em;
+    margin-bottom: 40px;
+    background-color: #dee5e5;
+}
+
+.quote1 {
+    padding-top: 100px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.box-one img {
+    /* width: 45vw; */
+    max-height: 20vw;
+}
+
+/* .left-text{
+    font-family: 'Cookie', 'cursive';
+    font-size: 2.5em;
+    position: relative;
+    top: 20%;
+    right: 6%;
+    color: #3f403f;
+    text-align: center; */
+    /* transform: translate (-50%, -50%) */
+/* max-width: 100vw;
+} */
+
+
+.projects {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.project-photos1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.project-photos1 img {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #3f403f;
+}
+
+.project-photos2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.project-photos2 img {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #3f403f;
 }
 
 .meet {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cookie', 'cursive';
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'left right'
+    'footer footer';
+    gap: 3%;
+    justify-content: center;
+}
+
+.item1 { 
+    grid-area: left; 
+    justify-content: center;
+}
+
+.headshot {
+    width: 350px;
+    border: 2px solid #3f403f;
+    border-radius: 175px;
+}
+
+.item2 { 
+    grid-area: right; 
+    font-size: 1.6em;
+    font-weight: bold;
+    justify-content: center;
+    width: 35%;
+    color: #642b39;
+}
+
+.item3 { 
+    grid-area: footer; 
+    font-size: 3em;
+    font-family: 'cookie', 'cursive';
+    justify-content: center;
+    text-align: center;
+    color: #95B2B8;
 }
 
 
@@ -121,6 +312,116 @@ body {
 
 
 
+/* .bio-box {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-box img {
+    width: 350px;
+    border: 2px solid #3f403f;
+    border-radius: 175px;
+}
+
+.bio-box p{
+    width: 35%;
+    padding-left: 3%;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.bio-name {
+    font-size: 1.5em;
+    font-family: 'cookie', 'cursive';
+    justify-content: center; */
+/* }? */
+
+
+
+.box-two {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cookie', 'cursive';
+    font-size: 3em;
+    margin-bottom: 40px;
+    background-color: #dee5e5;
+}
+
+.quote2 {
+    padding-top: 100px;
+    padding-left: 100px;
+    text-align: right;
+}
+
+.box-two img {
+    /* width: 45vw; */
+    max-height: 20vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    bottom: 0px;
+    height: 10vw;
+    background-color: #642b39;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #dee5e5;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.left-footer {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 33vw;
+    font-size: 2em;
+    vertical-align: middle;
+    padding-top: 3vw;
+}
+
+.left-footer i{
+    color: #dee5e5;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.center-footer {
+    float: center;
+    width: 34vw;
+    justify-content: center;
+}
+
+.center-footer img {
+    height: 10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-footer {
+    float: right;
+    width: 33vw;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding-top: 4vw;
+}
+
+/* .nav-link:hover {
+    text-decoration: underline;
+    letter-spacing: 2px; */
 
 
 
