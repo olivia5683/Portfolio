@@ -3,6 +3,7 @@
 2- Grid with headshot and bio are not centered.
 3- Other issues when making screen smaller - image & quote is weird, bio is weird.
 4- Logo in footer isn't centered in the center column.
+5- Width of full screen is weird. How do I shrink to fit the view width when "100%" is wider?
 
 
 */
@@ -30,7 +31,7 @@ body {
     background-color: #642b39;
     color: #ddd;
     height: 3vw;
-    width: 95vw;
+    /* width: 99vw; */
     /* align-items: center; */
     text-align: right;
     justify-content: space-between;
@@ -191,25 +192,30 @@ hr.line{
 
 
 .box-one {
-    width: 100vw;
+    /* width: -webkit-fit-content;
+    width: -moz-fit-content; */
+    width: 99vw;
     display: flex;
     justify-content: center;
     font-family: 'Cookie', 'cursive';
     font-size: 3em;
-    margin-bottom: 40px;
+    margin-left: 1em 1em;
     background-color: #dee5e5;
+}
+
+.box-one img {
+    /* width: 45vw; */
+    max-height: 20vw;
+    /* display: inline-block; */
 }
 
 .quote1 {
     padding-top: 100px;
     padding-right: 100px;
     text-align: left;
+    /* display: inline-block; */
 }
 
-.box-one img {
-    /* width: 45vw; */
-    max-height: 20vw;
-}
 
 /* .left-text{
     font-family: 'Cookie', 'cursive';
@@ -339,7 +345,7 @@ hr.line{
 
 
 .box-two {
-    width: 100vw;
+    width: 99vw;
     display: flex;
     justify-content: center;
     font-family: 'Cookie', 'cursive';
@@ -426,11 +432,57 @@ footer {
 
 
 
+    /* CONTACT PAGE CSS */
 
+.top-section {
+    margin-top: 3em;
+}
+.begin-today {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cookie', 'cursive';
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
+.contact-container {
+    justify-content: center;
+    width: 60vw;    
+    border-radius: 5px;
+    background-color: #95B2B8;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+input[type=text], [type=tel], [type=email], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3f403f;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertial;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+}
 
+input[type=submit]{
+    background-color: #642b39;
+    color: #dee5e5;
+    border: none;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    text-align: center;
+}
 
+input[type=submit]: hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
 
 
 
