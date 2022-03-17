@@ -36,7 +36,7 @@
             <a class="nav-link" href="../index2.html">Home</a>
             <a class="nav-link" href="Services.html">Services</a>
             <a class="nav-link" href="Testimonials.html">Testimonials</a>
-            <u>C o n t a c t</u>
+            <a class="nav-link" href="Contact.html">Contact</a>
         </nav>
         </div>
 
@@ -58,33 +58,28 @@
     </header>
 
     <main>
+
         <div class="contact-top-section">
             <hr class="line">
             <div class="begin-today">
-                Begin today!
+                Careers
             </div>
             <hr class="line">
         </div>
 
-
-        <div class="contact-body">
-            <h1>Ready to make space for what you love?</h1>
-
-            <div>
-                <h2>Start by calling us at:</h2>
-            </div>
-
-            <div class="bigphone">520-912-5677</div>
-
-            <div>
-                <h3>Or fill out the form below to schedule a call!</h3>
-            </div>
+        <div class="career-body">
+            We are honored that you are interested in working with us. As a growing company,
+            Healthier Homelife is always open to meeting new team members who are enthusiastic
+            about joining our team. We strive to create a work environment where all parties
+            are respected and feel accomplished with services they provide to our clients.
+            <p>If you are interested in becoming a member of our growing team, please fill
+                out the contact form below and submit it with your resume.
+            </p>
         </div>
 
+        <div class="career-signature">Thank you!</div>
 
-
-
-        <div class="contact-container">
+        <div class="career-container">
             <form method="post" action="/pages/customercontact.php">
                 <input type="text" id="fname" name="firstname" placeholder="Name*" aria-required=true maxlength="50">
                 <input type="email" id="email" name="emailaddress" placeholder="Email Address*" aria-required=true
@@ -93,8 +88,17 @@
                     minlength="7" max="14">
                 <input type="text" id="time" name="goodtime" placeholder="When is a good time to reach you?*"
                     aria-required=true maxlength="100">
-                <textarea id="subject" name="subject" placeholder="Is there anything else you'd like to know?"
+                <textarea id="subject" name="subject"
+                    placeholder="Is there anything in particular you would like us to know about you?"
                     style="height: 150px"></textarea>
+
+                <div class="upload">
+                    <label for="file-select">Upload:</label>
+                </div>
+                <div class="file-upload">
+                    <input type="file" id="file-select" name="Upload">
+                </div>
+
                 <input type="submit" id="submit" value="Submit">
             </form>
         </div>
@@ -103,11 +107,8 @@
 
 
 
-
-
-
-
     </main>
+
 
     <!-- FOOTER -->
     <footer>
