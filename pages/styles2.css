@@ -292,11 +292,12 @@ hr.line{
 
 table, tr, td {
     border: none;
+    border-spacing: 1em;
 }
 
 .headshot-bio-name {
     display: flex;
-    gap: 3%;
+    /* gap: 3%; */
     justify-content: center;
     max-width: 70vw;
     margin: auto;
@@ -305,17 +306,17 @@ table, tr, td {
 .headshot-bio { 
     display: flex;
     justify-content: center;
-margin-top: 1em;
+    margin-top: 1em;
 }
 
 .headshot {
-    width: 30%;
+    width: 100%;
     border: 2px solid #3f403f;
     border-radius: 50%;
  
 }
 
-.headshot-bio p { 
+.bio { 
     font-size: 1.6em;
     font-weight: bold;
     justify-content: center;
@@ -327,14 +328,14 @@ margin-top: 1em;
 
 .name { 
     /* display: flex;  */
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'cookie', 'cursive';
     justify-content: center;
     text-align: center;
     color: #6ea7b3;
     margin-top: 0;
     margin-bottom: 1em;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 
 
