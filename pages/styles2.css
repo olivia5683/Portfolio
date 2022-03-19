@@ -290,6 +290,10 @@ hr.line{
     letter-spacing: 2px;
 }
 
+table, tr, td {
+    border: none;
+}
+
 .headshot-bio-name {
     display: flex;
     gap: 3%;
@@ -432,10 +436,10 @@ footer {
     margin: auto;
 }
 
-.center-footer img {
+.footer-logo {
     height: 10vw;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    margin: auto;
 }
 
 .right-footer {
