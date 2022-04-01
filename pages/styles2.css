@@ -549,7 +549,7 @@ input:invalid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     margin: auto;
 }
 
@@ -557,14 +557,16 @@ input:invalid {
     color:#AB4962;
     text-align: center;
     width: 60vw;
+    margin: 1vw 2vw;
 }
 
 .service-group {
-    width: 30vw;
+    width: 25vw;
     background-color: #dee5e5;
     border-radius: 10px;
     padding: .5vw;
     margin: 1vw;
+    vertical-align: top;
 }
 
 .service-type {
